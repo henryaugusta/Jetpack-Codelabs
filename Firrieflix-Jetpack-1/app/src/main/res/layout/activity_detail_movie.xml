@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myDarkPurple"
+    android:orientation="vertical"
+    tools:context=".view.detail.DetailMovieActivity">
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="@string/movie_detail"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_baseline_arrow_back_24"
+                app:drawableTint="@color/colorWhite" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorWhite" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/def"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/poster_glass" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:contentDescription="@string/def"
+                    android:src="@drawable/ic_blurry_purple" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/label_movie_title"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Judul Film Disini"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_share"
+                        android:layout_weight="1"
+                        android:layout_width="60dp"
+                        android:contentDescription="@string/def"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:background="@android:color/transparent"
+                        android:tint="@color/colorWhite"
+                        android:src="@drawable/ic_baseline_share_24"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/label_movie_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    tools:text="20/20/2020" />
+
+
+                <TextView
+                    android:id="@+id/label_movie_director"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    tools:text="Directed By Henry Augusta" />
+
+                <TextView
+                    android:id="@+id/label_movie_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    tools:text="Rating : ⭐⭐⭐⭐" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/storyboard"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/label_storyboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/storyboard"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="@string/most_known_actor"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_artist" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

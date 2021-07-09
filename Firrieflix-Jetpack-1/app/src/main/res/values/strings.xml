@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Firrieflix</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="start_app">Start Application</string>
+    <string name="skip">Skip</string>
+    <string name="def">This is an image , ask help for someone if you need explanation</string>
+    <string name="movie">Movie</string>
+    <string name="show">Show</string>
+    <string name="profile">Profile</string>
+    <string name="storyboard">Storyboard</string>
+    <string name="most_known_actor">Most Known Actor :</string>
+    <string name="movie_detail">Movie Detail</string>
+
+</resources>

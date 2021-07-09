@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Firrieflix</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="start_app">Start Application</string>
+    <string name="skip">Skip</string>
+    <string name="def">This is an image , ask help for someone if you need explanation</string>
+    <string name="movie">Movie</string>
+    <string name="show">Show</string>
+    <string name="profile">Profile</string>
+    <string name="storyboard">Storyboard</string>
+    <string name="original_voice_language">Original Voice Language : </string>
+    <string name="desc_background_image">desc : Background Image</string>
+    <string name="production_house">Production House</string>
+    <string name="loading">loading . . . </string>
+    <string name="mov">Movie</string>
+    <string name="bestfie">Best Film</string>
+    <string name="staycation">Staycation Mate</string>
+    <string name="accessfrom">Access from anywhere</string>
+    <string name="jrg1">Guarantee for Quality, Only best film</string>
+    <string name="jrg2">Enjoy your staycation with us, Firriflix and Chill</string>
+    <string name="jrg3">Access from any device, no limitation</string>
+    <string name="star1">⭐</string>
+    <string name="star2">⭐⭐</string>
+    <string name="start3">⭐⭐⭐</string>
+    <string name="star4">⭐⭐⭐⭐</string>
+    <string name="star5">⭐⭐⭐⭐⭐</string>
+    <string name="cdesc_movie">flag</string>
+    <string name="error_message_toast">Terjadi Kesalahan, Refresh atau Coba Lagi Nanti</string>
+    <string name="desc_sofa">People Sitting On Sofa</string>
+    <string name="favorite_menu">Favorite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pager_movie">Movie</string>
+    <string name="pager_show">Show</string>
+    <string name="button_share">button share</string>
+    <string name="no_data_yet">Belum Ada Data</string>
+    <string name="success">Success</string>
+    <string name="success_delete">Berhasil Menghapus \u0020</string>
+    <string name="from_fav">\u0020 Dari Favorite</string>
+    <string name="success_insert">Berhasil Menambahkan \u0020</string>
+    <string name="to_favorite">\u0020Ke Database Favorite</string>
+    <string name="deleted_from_fav">\u0020 Dihapus dari Favorite</string>
+    <string name="shows">Show</string>
+    <string name="waiting_inet">Periksa Koneksi Internet Anda, Swipe untuk merefresh</string>
+    <string name="no_app_found">Aplikasi Tidak Ditemukan</string>
+    <string name="you_need_inet_detail">Anda Memerlukan Koneksi Internet Untuk Melihat Halaman Ini, Swipe Up Untuk Merefresh</string>
+    <string name="lang">Language</string>
+    <string name="reting_">\"Rating : \"</string>
+
+</resources>

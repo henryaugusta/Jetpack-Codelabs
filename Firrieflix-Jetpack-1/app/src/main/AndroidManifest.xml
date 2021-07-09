@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.feylabs.firrieflix">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_film"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_film_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Firrieflix"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity
+            android:name=".view.detail.DetailMovieActivity"
+            android:theme="@style/Theme.Firrieflix.OnBoarding" />
+        <activity
+            android:name=".view.DashboardActivity"
+            android:theme="@style/Theme.Firrieflix.OnBoarding" />
+        <activity
+            android:name=".view.WalkthroughActivity"
+            android:theme="@style/Theme.Firrieflix.OnBoarding">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
